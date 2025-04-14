@@ -1,0 +1,80 @@
+
+section .caption #one{
+    color: rgb(8, 8, 82);
+    font-size: 3rem;
+}
+
+section{
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(238, 233, 233);
+}
+
+.container .image img{
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.container .text p span{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.562);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section .caption #two{
+    color: orange;
+    font-size: 3rem;
+}
+
+section .caption #three{
+    color: rgb(8, 8, 82);
+    font-size: 3rem;
+}
+
+#about .btns a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+#about .btns #explore-btn{
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    background-color: orange;
+    padding: 15px;
+    gap: 10px;
+    margin-left: -1px;
+}
+
+#about .btns #explore-btn:hover{
+    background-color: rgba(255, 166, 0, 0.767);
+    color: aliceblue;
+}
+
+#about .btns #casestudy-btn{
+    border: 1px solid orange;
+    padding: 15px;color: orange;
+}
+
+#about .btns #casestudy-btn:hover{
+    background-color: none;
+    color: rgba(255, 166, 0, 0.801);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      
+    }
+}
