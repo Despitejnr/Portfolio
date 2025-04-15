@@ -8,48 +8,54 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1e2f;
-    color: white;
-    padding: 1rem 2rem;
-    position: sticky;
+    background: rgba(252, 247, 247, 0.5);
+    color: black;
+    padding: 0.9rem 2rem;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
   
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: orange;
-    margin-left: 70px;
+    color: #FAB108;
+    margin-left: 25px;
   }
   
   .nav-links {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
     transition: all 0.3s ease;
   }
   
-  .nav-links li a {
+  .nav-links  a {
     text-decoration: none;
-    color: white;
+    color: #465974;
     transition: color 0.3s ease;
-    margin-right: 50px;
+    margin-right: 30px;
   }
 
   .nav-links #getintouch{
-    background-color: orange;
-    height: 40px;
-    padding: 15px;
+    background-color: #FAB108;
+    padding: 13px;
     border-radius: 5px;
+    color: white;
   }
 
   .nav-links #getintouch:hover{
     background-color: rgba(255, 166, 0, 0.795);
-    color: rgb(255, 255, 255);
+    padding: 13.5px;
   }
   
-  .nav-links li a:hover {
+  .nav-link:hover {
     color: orange;
   }
   
@@ -68,11 +74,13 @@
       right: 0;
       background: #2e2e42;
       flex-direction: column;
+      justify-content: space-between;
       width: 100%;
       text-align: center;
-      padding: 0.1rem 0;
+      padding: 1rem 0;
       max-height: 0;
       overflow: hidden;
+      color: white;
     }
 
 

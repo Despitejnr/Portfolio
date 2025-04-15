@@ -1,20 +1,21 @@
 import React from 'react';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Brand from './Components/Brands/Brand';
-import Service from './Components/Services/Service';
-import CaseStudy from './Components/CoseStudy/CaseStudy';
+import Home from './Pages/Home/Home';
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import WorkExperience from './Pages/Work Experience/WorkExperience';
+import Blog from './Pages/Blog/Blog';
 
 
 function App() {
 
   return (
       <>
-        <Home />
-        <About />
-        <Brand />
-        <Service />
-        <CaseStudy />
+      <BrowserRouter>
+      <Routes>
+       <Route path='/' element={<Home/>}/>
+       <Route path='/work-experience' element={<WorkExperience/>}/> 
+       <Route path='/blog' element={<Blog/>}/>
+      </Routes> 
+      </BrowserRouter>
       </>
   )
 }
