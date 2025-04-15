@@ -1,10 +1,10 @@
 import React from 'react';
-import './CaseStudy.css';
+import './Cstudy.css';
 import foto from '../../assets/Case-Study.jpeg';
 import { MoveRight } from 'lucide-react';
 import './imageRecognition.js';
 
-function CaseStudy() {
+function Cstudy() {
     return (
         <div className="container-case">
             <div className="case-caption">
@@ -51,7 +51,7 @@ function CaseStudy() {
             </div>
 
             {/* Embed YouTube Video */}
-            <div className="video-container">
+            {/* <div className="video-container">
                 <iframe 
                     width="1060" 
                     height="515" 
@@ -62,9 +62,9 @@ function CaseStudy() {
                     referrerPolicy="strict-origin-when-cross-origin" 
                     allowFullScreen>
                 </iframe>
-            </div>
+            </div> */}
         </div>
     );
 }
 
-export default CaseStudy;
+export default Cstudy;
