@@ -73,7 +73,6 @@ const BlogSection = () => {
 
   return (
     <div className="blog-container">
-      <Navbar />
       
       <div className="blog-content">
         <div className="blog-header">
