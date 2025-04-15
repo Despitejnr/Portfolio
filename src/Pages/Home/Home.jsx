@@ -6,6 +6,7 @@ import Service from "../../Components/Services/Service";
 import Cstudy from "../../Components/Cstudy/Cstudy";
 import Navbar from "../../Components/Navbar/Navbar";
 import GetInTouch from "../../Components/GetInTouch/GetInTouch";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   
@@ -18,6 +19,7 @@ const Home = () => {
         <Service />
         <Cstudy />
         <GetInTouch/>
+        <Footer/>
     </div>
   );
 };
