@@ -1,92 +1,43 @@
-section .brand-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    gap: 20px;
-    overflow: hidden;
-    width: 100%;
-}
-
-section .brand-container .brand-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-section .brand-container .grid-image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    overflow: hidden;
-}
-
-section .brand-container .grid-image .brand-item img {
-    width: 150px;
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-    object-fit: contain;
-}
-
-section .brand-container .grid-image .brand-item img:hover {
-    transform: scale(1.1);
-}
-
-.brand-experience h1 {
-    font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.616);
+.brand-container {
+    padding: 2rem;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    .brand-container {
-        flex-direction: column;
-        gap: 30px;
+  }
+  
+  .brand-experience h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .grid-image {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .brand-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .brand-track img {
+    height: 80px;
+    margin: 0 2rem;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .brand-track img:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
     }
-
-    .brand-item {
-        flex-direction: column;
-        gap: 20px;
+    100% {
+      transform: translateX(-50%);
     }
-
-    section .brand-container .grid-image .brand-item img {
-        width: 100px;
-    }
-
-    .brand-experience h1 {
-        font-size: 2rem;
-    }
-
-    section {
-        margin: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .brand-container {
-        gap: 20px;
-    }
-
-    .brand-item {
-        gap: 15px;
-    }
-
-    section .brand-container .grid-image .brand-item img {
-        width: 80px;
-    }
-
-    .brand-experience h1 {
-        font-size: 1.8rem;
-    }
-
-    section {
-        margin: 5px;
-    }
-}
+  }
+  
