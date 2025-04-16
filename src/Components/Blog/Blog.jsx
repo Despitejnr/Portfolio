@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import './Blog.css'
-import Navbar from '../Navbar/Navbar'
-import Footer from '../Footer/Footer'
 
 const blogCategories = [
   "All Categories",
