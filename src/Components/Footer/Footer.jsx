@@ -23,11 +23,11 @@ const Footer = () => {
        <div className='footer-links'>
            <h3>Quick Links</h3>
            <ul>
-             <Link>Home</Link>
-             <Link>Work Experience</Link>
-             <Link>Blog</Link>
-             <Link>Services</Link>
-             <Link>Case Studies</Link>
+             <Link to='/'>Home</Link>
+             <Link to='/work-experience'>Work Experience</Link>
+             <Link to='/blog'>Blog</Link>
+             <li><a href='#service'>Services</a></li>
+             <Link to='/caseStudy'>Case Studies</Link>
            </ul>
        </div>
        <div className='footer-contact'>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
-import BlogSection from '../../Components/Blog/Blog'
+import BlogSection from '../../Components/BlogSection/Blog'
 
 const Blog = () => {
   return (

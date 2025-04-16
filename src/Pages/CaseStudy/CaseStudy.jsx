@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
+import CaseStudySection from '../../Components/CaseStudySection/CaseStudySection'
 
 const CaseStudy = () => {
   return (
-    <div>
+    <div >
        <Navbar/>
+       <CaseStudySection/>
        <Footer/>
     </div>
   )

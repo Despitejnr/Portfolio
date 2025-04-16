@@ -6,7 +6,7 @@ import { SlLocationPin } from "react-icons/sl";
 
 const GetInTouch = () => {
   return (
-    <div className='getintouch' id='getintouch'>
+    <div className='getintouch' id='contact-getInTouch'>
         <div className='contact'>
             <h1>Get In Touch</h1>
             <p>Have a project in mind or want to discuss how we can work together? I'm always open to new opportunities and challenges.</p>

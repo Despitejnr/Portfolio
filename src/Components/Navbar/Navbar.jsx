@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -20,10 +20,10 @@ const Navbar = () => {
 
      <div>
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <Link to='/' className='nav-link'>Home</Link>
-        <Link to='/work-experience' className='nav-link'>Work Experience</Link>
-        <Link to='/blog' className='nav-link'>Blog</Link>
-        <Link to='#getintouch' id='getintouch'>Get in Touch</Link>
+        <NavLink to='/' className={({isActive}) => isActive ? 'nav-link active' :'nav-link'}>Home</NavLink>
+        <NavLink to='/work-experience' className={({isActive}) => isActive ? 'nav-link active' :'nav-link'}>Work Experience</NavLink>
+        <NavLink to='/blog' className={({isActive}) => isActive ? 'nav-link active' :'nav-link'}>Blog</NavLink>
+        <a href='#contact-getInTouch'><button  id='getintouch'>Get in Touch</button></a>
       </ul>
       </div>
 
