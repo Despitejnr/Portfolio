@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { FaArrowRight } from "react-icons/fa";
+import { CiCalendar } from "react-icons/ci";
+import { CiClock2 } from "react-icons/ci";
 import './Blog.css'
 
 const blogCategories = [
@@ -99,17 +102,19 @@ const BlogSection = () => {
               </div>
               <div className="blog-card-content">
                 <div className="blog-card-meta">
-                  <span className="date">{post.date}</span>
-                  <span className="read-time">{post.readTime}</span>
+                  <span className="date"><CiCalendar className='icon'/>{post.date}</span>
+                  <span className="read-time"><CiClock2 className='icon'/>{post.readTime}</span>
                 </div>
                 <h2>{post.title}</h2>
                 <p>{post.description}</p>
-                <button className="read-more-btn">Read Article →</button>
+                <button className="read-more-btn">Read Article <span><FaArrowRight /></span></button>
               </div>
             </div>
           ))}
         </div>
+
       </div>
+      <button className='load-more'>Load More Articles</button>
     </div>
   )
 }
