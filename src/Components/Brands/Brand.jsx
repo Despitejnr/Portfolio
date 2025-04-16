@@ -17,14 +17,23 @@ function Brand() {
         </div>
 
         <div className="grid-image">
-        <div className="brand-item">
-              <img src={photo} alt="Brand 1" />
-              <img src={node8} alt="Brand 2" />       
-              <img src={uniliver} alt="Brand 3" />
-              <img src={Sanofi} alt="Brand 3" />
-              <img src={mestAfrica} alt="Brand 3" />
-              <img src={jessi} alt="Brand 3" />
-        </div>
+          <div className="brand-track">
+            {/* Original images */}
+            <img src={photo} alt="Ford" />
+            <img src={node8} alt="Node8" />
+            <img src={uniliver} alt="Unilever" />
+            <img src={Sanofi} alt="Sanofi" />
+            <img src={mestAfrica} alt="MEST Africa" />
+            <img src={jessi} alt="Jessi" />
+
+            {/* Duplicate for seamless scroll */}
+            <img src={photo} alt="Ford" />
+            <img src={node8} alt="Node8" />
+            <img src={uniliver} alt="Unilever" />
+            <img src={Sanofi} alt="Sanofi" />
+            <img src={mestAfrica} alt="MEST Africa" />
+            <img src={jessi} alt="Jessi" />
+          </div>
         </div>
       </div>
     </section>

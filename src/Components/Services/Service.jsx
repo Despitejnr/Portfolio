@@ -6,8 +6,50 @@ import training from '../../assets/training.png'
 import consultation from '../../assets/consultation.png'
 
 function Service(){
-
+    const cardData = [
+        {
+          img: statistics,
+          title: "Strategy",
+          lines: [
+            "Develop comprehensive digital",
+            "marketing strategies tailored",
+            "to your business goals and",
+            "target audience."
+          ]
+        },
+        {
+          img: objective,
+          title: "Campaigns",
+          lines: [
+            "Create and execute engaging",
+            "campaigns across multiple",
+            "platforms to drive results and",
+            "maximize ROI."
+          ]
+        },
+        {
+          img: training,
+          title: "Training",
+          lines: [
+            "Empower your team with the skills",
+            "and knowledge needed to excel in",
+            "the digital marketing landscape."
+          ]
+        },
+        {
+          img: consultation,
+          title: "Consultation",
+          lines: [
+            "Get expert advice and insights to",
+            "solve specific marketing",
+            "challenges and optimize your",
+            "existing efforts."
+          ]
+        }
+      ];
+      
     return(
+        
         <section>
                 <div className="container-service" id='service'>
 
@@ -22,87 +64,26 @@ function Service(){
 
 
                     <div className="card-multi-container">
+                         {cardData.map((card, index) => (
+                         <div className="cards" key={index}>
+                           <div className="image">
+                             <img src={card.img} alt={card.title} />
+                           </div>
 
-                        <div className="cards">
-                            <div className="image">
-                            <img src={statistics} alt="" />
+                           <div className="image">
+                             <h1>{card.title}</h1>
+                           </div>
+
+                           <div className="cap-text">
+                             {card.lines.map((line, i) => (
+                               <p key={i}><span>{line}</span></p>
+                             ))}
+                           </div>
                          </div>
+                       ))}
+                     </div>
 
-                        <div className="image">
-                            <h1>Strategy</h1>
-                        </div>
-
-                            <div className="cap-text">
-                                <p><span>Develop comprehensive digital</span></p>
-                                <p><span>marketing strategies tailored</span></p>
-                                <p><span>to your business goals and</span></p>
-                                <p><span>target audience.</span></p>
-                         </div>
-                        </div>
-
-
-                        {/* ================= First Div ===================== */}
-
-
-                        <div className="cards">
-                            <div className="image">
-                            <img src={objective} alt="" />
-                         </div>
-
-                        <div className="image">
-                            <h1>Campaigns</h1>
-                        </div>
-
-                            <div className="cap-text">
-                                <p><span>Create and execute engaging</span></p>
-                                <p><span>campaigns across multiple</span></p>
-                                <p><span>platforms to driven results and</span></p>
-                                <p><span>maximize ROI.</span></p>
-                         </div>
-                        </div>
-
-                         {/* ================= First Div ===================== */}
-
-
-             
-                         <div className="cards">
-                            <div className="image">
-                            <img src={training} alt="" />
-                         </div>
-
-                        <div className="image">
-                            <h1>Traning</h1>
-                        </div>
-
-                            <div className="cap-text">
-                            <p><span>Empower your team with the skills</span></p>
-                                <p><span>and knowledge needed to excel in</span></p>
-                                <p><span>the digital marketing lanspace.</span></p>
-                         </div>
-                        </div>
-
-
-                        <div className="cards">
-                            <div className="image">
-                            <img src={consultation} alt="" />
-                         </div>
-
-                        <div className="image">
-                            <h1>Consultation</h1>
-                        </div>
-
-                            <div className="cap-text">
-                                <p><span>Get expert advice and insights to</span></p>
-                                <p><span>solve soecific marketing</span></p>
-                                <p><span>challenging and optimize your</span></p>
-                                <p><span>existing efforts.</span></p>
-                         </div>
-                        </div>
-                    </div>          
-
-
-                    </div>
-
+                </div>
             
             
         </section>

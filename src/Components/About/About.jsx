@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { MoveRight } from 'lucide-react';
+import { FaArrowRight } from "react-icons/fa";
 import photo from "../../assets/young-man.jpeg";
 
 function About() {
@@ -27,8 +27,8 @@ function About() {
       </div>
 
       <div className="btns">
-      <a id="explore-btn" href="#Explore Services">Explore Services <MoveRight /></a>
-        <a id="casestudy-btn" href="#View Case Studies">View Case Studies</a>
+        <button id="explore-btn" href="#Explore Services">Explore Services <FaArrowRight /></button>
+        <button id="casestudy-btn" href="#View Case Studies">View Case Studies</button>
       </div>
       </div>
       </div>
