@@ -1,11 +1,13 @@
 import React from 'react'
 import './CaseStudy.css'
+// This image is just temporary for all
+import temp from "../../assets/Case-Study.jpeg";
 
 const caseStudies = [
   {
     title: "Global Brand Launch Campaign",
     description: "Led the digital marketing strategy for a tech startup's global brand launch, resulting in a 45% conversion rate and 150K new users within the first month.",
-    image: "/case-study-1.jpg",
+    image: temp,
     challenge: "The client needed to establish market presence quickly while facing stiff competition from established players with larger budgets.",
     solution: "Implemented a multi-channel approach that prioritized audience engagement and leveraged the client's unique value proposition.",
     strategy: "Combined organic social growth with targeted paid campaigns, content marketing, and influencer partnerships.",
@@ -14,7 +16,7 @@ const caseStudies = [
   {
     title: "Social Media Revamp",
     description: "Revamped social media strategy for a major fashion retailer, increasing engagement by 78% and driving a 45% boost in social referral sales.",
-    image: "/case-study-2.jpg",
+    image: temp,
     challenge: "The client needed to establish market presence quickly while facing stiff competition from established players with larger budgets.",
     solution: "Implemented a multi-channel approach that prioritized audience engagement and leveraged the client's unique value proposition.",
     strategy: "Combined organic social growth with targeted paid campaigns, content marketing, and influencer partnerships.",
@@ -23,7 +25,7 @@ const caseStudies = [
   {
     title: "E-commerce Performance Optimization",
     description: "Transformed an e-commerce platform's digital presence through comprehensive optimization, resulting in a 95% increase in online sales and 60% improvement in conversion rates.",
-    image: "/case-study-3.jpg",
+    image: temp,
     challenge: "The e-commerce platform was struggling with high cart abandonment rates, poor mobile performance, and declining conversion rates despite steady traffic.",
     solution: "Implemented a data-driven optimization strategy focusing on user experience, mobile responsiveness, and conversion rate optimization (CRO).",
     strategy: "Conducted thorough analytics analysis, implemented A/B testing, optimized checkout process, and enhanced mobile experience with progressive web app features.",
