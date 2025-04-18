@@ -3,6 +3,10 @@ import { FaArrowRight } from "react-icons/fa";
 import { CiCalendar } from "react-icons/ci";
 import { CiClock2 } from "react-icons/ci";
 import './Blog.css'
+// This image is just temporary for all
+// Import other images and replace the temp variables
+import temp from "../../assets/Case-Study.jpeg";
+
 
 const blogCategories = [
   "All Categories",
@@ -21,7 +25,7 @@ const blogPosts = [
     readTime: "8 min read",
     title: "10 Digital Marketing Trends That Will Define 2023",
     description: "Explore the key marketing trends that will shape the digital landscape this year, from AI-driven personalization to the rise of short-form video...",
-    image: "../assets/"
+    image: temp
   },
   {
     category: "Content Marketing",
@@ -29,7 +33,7 @@ const blogPosts = [
     readTime: "10 min read",
     title: "How to Build a Content Strategy That Actually Drives Results",
     description: "Learn the key components of a high-performing content strategy that aligns with business objectives and resonates with your target audience.",
-    image: "/blog-2.jpg"
+    image: temp
   },
   {
     category: "Social Media",
@@ -37,7 +41,7 @@ const blogPosts = [
     readTime: "7 min read",
     title: "Social Media Algorithms: Staying Ahead of the Curve",
     description: "Discover how to adapt your social media strategy to the ever-changing algorithms across platforms like Instagram, TikTok, and LinkedIn.",
-    image: "/blog-3.jpg"
+    image: temp
   },
   {
     category: "Email Marketing",
@@ -45,7 +49,7 @@ const blogPosts = [
     readTime: "9 min read",
     title: "Email Marketing in 2023: Beyond the Basics",
     description: "Take your email marketing to the next level with advanced segmentation, automation, and personalization strategies that drive engagement.",
-    image: "/blog-4.jpg"
+    image: temp
   },
   {
     category: "Influencer Marketing",
@@ -53,7 +57,7 @@ const blogPosts = [
     readTime: "11 min read",
     title: "The ROI of Influencer Marketing: Measuring What Matters",
     description: "Learn how to effectively measure the return on investment of your influencer campaigns beyond simple engagement metrics.",
-    image: "/blog-5.jpg"
+    image: temp
   },
   {
     category: "Marketing Strategy",
@@ -61,7 +65,7 @@ const blogPosts = [
     readTime: "6 min read",
     title: "Data Privacy and Marketing: Navigating the Changing Landscape",
     description: "Explore how marketers can adapt to increasing data privacy regulations while still delivering personalized customer experiences.",
-    image: "/blog-6.jpg"
+    image: temp
   }
 ]
 
@@ -98,7 +102,7 @@ const BlogSection = () => {
             <div key={index} className="blog-card">
               <div className="blog-card-image">
                 <span className="category-tag">{post.category}</span>
-                <img src={`/src/assets/blog/${index + 1}.jpg`} alt={post.title} />
+                <img src={post.image} alt={post.title} />
               </div>
               <div className="blog-card-content">
                 <div className="blog-card-meta">
